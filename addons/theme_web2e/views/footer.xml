@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="custom_footer" inherit_id="website.layout" name="Custom Footer">
+        <xpath expr='//footer' position="replace">
+            <footer>
+                <div id="footer" class="dark-footer container-fluid py-5 border-top">
+                    <div class="container">
+                        <div class="flex-container">
+                            <div class="flex-col-5">
+                                <div class="fiscal-logo"><img class="footer-logo"
+                                    src="/theme_web2e/static/src/img/footer-logo.png" /></div>
+                                <div class="fiscal-data">
+                                    <h4>Aps Punto Zero</h4>
+                                    <p>Via Roma, 40, 38052, Caldonazzo<br /><strong>CF</strong>:
+                                        90019720227<br /><br />Credits: <a href="https://www.web2e.it">
+                                        Web2e</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="flex-col-5">
+                                <ul>
+                                    <li>
+                                        <a href="/">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="/event">Eventi</a>
+                                    </li>
+                                    <li>
+                                        <a href="/contattaci">Contattaci</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-col-5">
+                                <ul>
+                                    <li>
+                                        <a href="/chi-siamo">Chi siamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="/direttivo">Direttivo</a>
+                                    </li>
+                                    <li>
+                                        <a href="/punti-d-incontro">Dove operiamo</a>
+                                    </li>
+                                    <li>
+                                        <a href="/collabora-con-noi">Collabora con noi</a>
+                                    </li>
+                                    <li>
+                                        <a href="/diventa-socio">Diventa socio</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-col-5">
+                                <ul>
+                                    <li>
+                                        <a href="/privacy-policy">Privacy policy</a>
+                                    </li>
+                                    <li>
+                                        <a href="/cookie-policy">Cookies Policy</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="flex-col-5">
+                                <div class="social-box">
+                                    <h4>Seguici sui social</h4>
+                                    <ul class="social-ico">
+                                        <li>
+                                            <a href="https://m.facebook.com/puntozero.aps/"
+                                                class="s_share_facebook"
+                                                target="_blank">
+                                                <i class="fa fa-facebook m-1" />
+                                            </a>
+                                        </li>
+                                        <!--li>
+                                            <a href="/website/social/instagram"
+                                                class="s_share_instagram"
+                                                target="_blank">
+                                                <i class="fa fa-instagram m-1" />
+                                            </a>
+                                        </li-->
+                                    </ul>
+                                </div>
+                                <!--div class="newsletter-box">
+                                    <h4>Vuoi rimanere aggiornato sulle nostre iniziative?</h4>
+                                    <a class="bolder-green" href="/newsletter"> Iscriviti alla
+                                        newsletter <i
+                                            class="fa fa-arrow-right" />
+                                    </a>
+                                </div-->
+                                <div class="newsletter-box">
+                                    <p>Nel 2023 Punto Zero APS ha registrato entrate da enti pubblici per un valore complessivo di  € 13.207,60
+                                    <a class="bolder-green" href="/newsletter"> Scarica documento</a>
+                                    </p>
+                                </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </xpath>
+    </template>
+</odoo>

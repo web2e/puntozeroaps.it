@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="we_text_image" name="We Text Image">
+        <section id="img-right">
+            <div class="container-fluid">
+                <div class="container-mid">
+                    <div class="flex-container">
+                        <div class="flex-col text-box">
+                            <div class="text-box-holder">
+                                <div class="small-text-gr">Chi siamo</div>
+                                <h2>Punto Zero è una Associazione di Promozione Sociale (APS)</h2>
+                                <p class="intro-font">Un luogo in cui nascono nuove idee e nuovi progetti, uno spazio e
+                                    una rete in cui si pensa più alle soluzioni che ai problemi
+                                    locali, con azioni mirate e multidisciplinari: dalla
+                                    rivitalizzazione dei centri abitati, alla formazione di giovani
+                                    e stranieri, alla realizzazione di iniziative di animazione di
+                                    comunità.</p>
+                                    <div class="btn-holder"><a href="/associazione" class="btn btn-primary rounded mb-2">Scopri
+                                    di più <i class="fa fa-arrow-circle-o-right"></i></a></div>
+                            </div>
+                        </div>
+                        <div class="flex-col img-box">
+                            <img
+                                src="/theme_web2e/static/src/img/chi-siamo.jpg"
+                                class="d-block w-100 rounded-circle" alt="cover 1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

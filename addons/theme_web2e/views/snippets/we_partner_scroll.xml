@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="we_partner_scroll" name="Partner Scroll">
+        <section id="partner_scroll" data-vcss="001">
+            <div class="container-mid">
+                <h2>La nostra rete</h2>
+                <div class="subtitle">Giovane ma ricca di amici</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="flex-container">
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-col">
+                        <div class="scroll-img">
+                            <img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

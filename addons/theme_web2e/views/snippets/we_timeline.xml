@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template name="Timeline" id="we_timeline">
+    <section class="s_timeline we-card pt24 pb48">
+        <div class="container s_timeline_line">
+            <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                <div class="s_timeline_date"><span class="bg-white"><b>2019</b></span></div>
+                <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card w-100 d-flex flex-column shadow mb-5 pb-5 rounded-we bg-gray" data-name="We header Card" data-snippet="we_card_header">
+                        <div class="we-card-header">
+                            <h3>Titolo</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <img src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png" alt="icona timeline" class="s_timeline_icon"/>
+                </div>
+                <div class="s_timeline_content"/>
+            </div>
+            <div class="s_timeline_row d-block d-md-flex flex-row" data-name="Row">
+                <div class="s_timeline_date"><span class="bg-white"><b>2018</b></span></div>
+                <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card w-100 d-flex flex-column shadow mb-5 pb-5 rounded-we bg-gray" data-name="We header Card" data-snippet="we_card_header">
+                        <div class="we-card-header">
+                            <h3>Titolo</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <img src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png" alt="icona timeline" class="s_timeline_icon"/>
+                </div>
+                <div class="s_timeline_content d-flex">
+                    <img src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png" alt="icona timeline" class="s_timeline_icon"/>
+                    <div class="s_timeline_card s_card w-100 d-flex flex-column shadow mb-5 pb-5 rounded-we bg-gray" data-name="We header Card" data-snippet="we_card_header">  
+                        <div class="we-card-header">
+                            <h3>Titolo</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="s_timeline_row d-block d-md-flex flex-row-reverse" data-name="Row">
+                <div class="s_timeline_date"><span class="bg-white"><b>2016</b></span></div>
+                <div class="s_timeline_content d-flex">
+                    <div class="s_timeline_card s_card bg-white w-100 d-flex flex-column shadow mb-5 pb-5 rounded-we bg-gray" data-name="We header Card" data-snippet="we_card_header">
+                        <div class="we-card-header">
+                            <h3>Titolo</h3>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <img src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png" alt="icona timeline" class="s_timeline_icon"/>
+                </div>
+                <div class="s_timeline_content"/>
+            </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

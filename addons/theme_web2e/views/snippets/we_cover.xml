@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="we_cover" name="We Cover">
+        <section class="we_cover parallax s_parallax_is_fixed bg-black-50" data-scroll-background-ratio="1">
+            <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 50%;"/>
+            <div class="o_we_bg_filter bg-black-50"/>
+            <div class="container s_allow_columns">
+                <h1>Catchy Headline</h1>
+            </div>
+        </section>
+    </template>
+
+</odoo>

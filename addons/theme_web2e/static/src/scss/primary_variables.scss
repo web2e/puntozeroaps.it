@@ -1,0 +1,75 @@
+$o-theme-font-configs: (
+    'Barlow': (
+        'family': ('Barlow', sans-serif),
+        'url': 'Barlow:100,100i,200,200i,300,300i,400,400i,500,600,700,800,900',
+    ),
+    'Barlow Semi Condensed': (
+        'family': ('Barlow Semi Condensed', sans-serif),
+        'url': 'Barlow+Semi+Condensed:100,200,300,400,400i,600,700,800',
+    ),
+);
+
+$o-website-values-palettes: (
+    (
+        // Fonts
+        'font': 'Barlow',
+        'headings-font': 'Barlow',
+        'navbar-font': 'Barlow',
+        'buttons-font': 'Barlow Semi Condensed',
+    ),
+);
+
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'custom-theme': (
+            'o-color-1':#2EA267,
+            'o-color-2':#F7CA38,
+            'o-color-3':#D6EBF9,
+            'o-color-4':#E8F4FC,
+            'o-color-5':#2C2C2C,
+
+            'o-cc1-bg': #FFFFFF,
+            'o-cc1-text': #2C2C2C,
+            'o-cc1-headings': 'o-color-1',
+            'o-cc1-link': 'o-color-1',
+            'o-cc1-btn-primary': #D6EBF9,
+            'o-cc1-btn-primary-border': 'o-color-3',
+            'o-cc1-btn-secondary': #F7F7F7,
+            'o-cc1-btn-secondary-border': 'o-color-1',
+
+            'o-cc2-bg': 'o-color-3',
+            'o-cc2-text': #5E6883,
+            'o-cc2-headings': 'o-color-1',
+            'o-cc2-link': 'o-color-1',
+            'o-cc2-btn-primary': #AEE2E4,
+            'o-cc2-btn-primary-border': 'o-color-2',
+            'o-cc2-btn-secondary': #F7F7F7,
+            'o-cc2-btn-secondary-border': 'o-color-1',
+
+            'o-cc3-bg': 'o-color-1',
+            'o-cc3-text': 'o-color-4',
+            'o-cc3-headings': 'o-color-4',
+            'o-cc3-link': 'o-color-2',
+            'o-cc3-btn-primary': #5E6883,
+            'o-cc3-btn-primary-border': 'o-color-2',
+            'o-cc3-btn-secondary': 'o-color-1',
+            'o-cc3-btn-secondary-border': 'o-color-1',
+
+            'o-cc5-bg': #F7CA38,
+            'o-cc5-text': 'o-color-5',
+            'o-cc5-headings': 'o-color-5',
+            'o-cc5-link': 'o-color-1',
+
+            'body': #2C2C2C, //applica a solid
+
+            'menu': 1,
+            'footer': 5,
+            'copyright': 5,
+
+        ),
+    )
+);
+
+$o-selected-color-palettes-names: append($o-selected-color-palettes-names, 'custom-theme');
+

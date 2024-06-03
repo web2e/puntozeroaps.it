@@ -1,0 +1,12 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+we_asso.access_asso_ruoli,access_asso_ruoli,we_asso.model_asso_ruoli,base.group_user,1,1,1,1
+we_asso.access_asso_tag,access_asso_tag,we_asso.model_asso_tag,base.group_user,1,1,1,1
+we_asso.access_asso_gruppi,access_asso_gruppi,we_asso.model_asso_gruppi,base.group_user,1,1,1,1
+we_asso.access_asso_anagrafiche,access_asso_anagrafiche,we_asso.model_asso_anagrafiche,base.group_user,1,1,1,1
+we_asso.access_asso_anagrafiche_ruoli_lines,access_asso_anagrafiche_ruoli_lines,we_asso.model_asso_anagrafiche_ruoli_lines,base.group_user,1,1,1,1
+we_asso.access_asso_anagrafiche_tag_lines,access_asso_anagrafiche_tag_lines,we_asso.model_asso_anagrafiche_tag_lines,base.group_user,1,1,1,1
+we_asso.access_asso_anagrafiche_gruppi_lines,access_asso_anagrafiche_gruppi_lines,we_asso.model_asso_anagrafiche_gruppi_lines,base.group_user,1,1,1,1
+we_asso.access_asso_tipo_documenti,access_asso_tipo_documenti,we_asso.model_asso_tipo_documenti,base.group_user,1,1,1,1
+we_asso.access_asso_anagrafiche_documenti_lines,access_asso_anagrafiche_documenti_lines,we_asso.model_asso_anagrafiche_documenti_lines,base.group_user,1,1,1,1
+we_asso.access_asso_ruoli_specifici,access_asso_ruoli_specifici,we_asso.model_asso_ruoli_specifici,base.group_user,1,1,1,1
+we_asso.access_asso_iscrizioni,access_asso_iscrizioni,we_asso.model_asso_iscrizioni,base.group_user,1,1,1,1

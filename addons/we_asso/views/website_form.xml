@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="menu_associato_form12" model="website.menu">
+        <field name="name">Associati</field>
+        <field name="url">/associato_webform</field>
+        <field name="parent_id" ref="website.main_menu" />
+        <field name="sequence">55</field>
+    </record>
+
+    <template id="create_associato" name="Create Associato">
+        <t t-call="website.layout">
+            <div id="wrap">
+                <div class="oe_structure">
+                </div>
+                <div class="oe_structure">
+                    <div class="container">
+                        <div class="oe_structure">
+                            <h2>Compila il modulo per inviare la tua richiesta di iscrizione
+                                all'associazione</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud
+                                exe
+                            </p>
+                        </div>
+                        <div id="ass-form" class="row">
+                            <form role="form" action="/create/associato" method="POST">
+                                <input type="hidden" name="csrf_token"
+                                    t-att-value="request.csrf_token()" />
+                                <div class="flex-container">
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="firstname" class="control-label">Nome</label>
+                                            <input type="text" name="firstname"
+                                                t-att-value="firstname" id="firstname"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="lastname" class="control-label">Cognome</label>
+                                            <input type="lastname" name="lastname"
+                                                t-att-value="lastname" id="lastname"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="indirizzo" class="control-label">Indirizzo</label>
+                                            <input type="indirizzo" name="indirizzo"
+                                                t-att-value="indirizzo" id="indirizzo"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="city" class="control-label">Località</label>
+                                            <input type="city" name="city" t-att-value="city"
+                                                id="city"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-3">
+                                        <div class="form-group">
+                                            <label for="provincia" class="control-label">Provincia</label>
+                                            <input type="provincia" name="provincia"
+                                                t-att-value="provincia" id="provincia"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-3">
+                                        <div class="form-group">
+                                            <label for="cap" class="control-label">Cap</label>
+                                            <input type="cap" name="cap" t-att-value="cap" id="cap"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col-3">
+                                        <div class="form-group">
+                                            <label for="nazione" class="control-label">Nazione</label>
+                                            <input type="nazione" name="nazione"
+                                                t-att-value="nazione" id="nazione"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Dati fiscali</h3>
+                                <div class="flex-container">
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="codice_fiscale" class="control-label">Codice
+                                                Fiscale</label>
+                                            <input type="codice_fiscale" name="codice_fiscale"
+                                                t-att-value="codice_fiscale"
+                                                id="codice_fiscale"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="data_nascita" class="control-label">Data di
+                                                nascita</label>
+                                            <input id="data_nascita" type="date" name="data_nascita"
+                                                class="form-control o_website_form_input o_website_form_date"
+                                                required="required"
+                                            />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="luogo_nascita" class="control-label">Luogo
+                                                di nascita</label>
+                                            <input type="luogo_nascita" name="luogo_nascita"
+                                                t-att-value="luogo_nascita"
+                                                id="luogo_nascita"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="gender" class="control-label">Sesso</label>
+                                            <select class="form-control" name="gender">
+                                                <option t-attf-value="false"></option>
+                                                <option t-attf-value="male">Maschio</option>
+                                                <option t-attf-value="female">Femmina</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h3>Dati di contatto</h3>
+                                <div class="flex-container">
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="email" class="control-label">Email</label>
+                                            <input type="email" name="email" t-att-value="email"
+                                                id="email"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="mobile" class="control-label">Cellulare</label>
+                                            <input type="mobile" name="mobile" t-att-value="mobile"
+                                                id="mobile"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                    <div class="flex-col">
+                                        <div class="form-group">
+                                            <label for="phone" class="control-label">Telefono</label>
+                                            <input type="phone" name="phone" t-att-value="phone"
+                                                id="phone"
+                                                class="form-control" required="required" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group py-2">
+                                    <label for="note" class="control-label">Note</label>
+                                    <textarea name="note" t-att-value="note"
+                                        id="note"
+                                        class="form-control load_editor" />
+                                </div>
+                                <div class="clearfix oe_login_buttons">
+                                    <button type="submit" class="btn btn-primary pull-left">Invia richiesta
+                                    </button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="oe_structure">
+                </div>
+            </div>
+        </t>
+    </template>
+
+    <record id="associato_thanks" model="website.page">
+        <field name="name">Grazie</field>
+        <field name="type">qweb</field>
+        <field name="url">/associato-thank-you</field>
+        <field name="website_published">True</field>
+        <field name="key">we_asso.associato_thanks</field>
+        <field name="arch" type="xml">
+            <t name="Thanks" t-name="we_asso.associato_thanks">
+                <t t-call="website.layout">
+                    <div id="wrap">
+                        <div class="container">
+                            <h1>Grazie!</h1>
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="alert alert-success" role="status">
+                                        Ti ringraziamo per averci inviato la tua richiesta.
+                                    </div>
+                                    <p>
+                                        Ti aggiorneremo al più presto !
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </field>
+    </record>
+
+</odoo>

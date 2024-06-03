@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- MENU ROOT E CONFIGURATION -->
+    <menuitem id="menu_asso_root"
+              name="Associazione"
+              sequence="10"
+    />
+    <menuitem id="menu_asso_general"
+              name="Generale"
+              parent="menu_asso_root"
+              sequence="10"
+    />
+    <menuitem id="menu_asso_configuration"
+              name="Configurazioni"
+              parent="menu_asso_root"
+              sequence="20"
+    />
+</odoo>

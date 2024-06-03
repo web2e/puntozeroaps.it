@@ -1,0 +1,68 @@
+<odoo>
+    <data>
+
+        <record id="sequence_iscrizione_code" model="ir.sequence">
+            <field name="name">Codice iscrizione</field>
+            <field name="code">sequence.iscrizione.code</field>
+            <field name="prefix">ISC</field>
+            <field name="padding">4</field>
+        </record>
+
+        <!-- TREE VIEW -->
+        <record id="view_asso_iscrizioni_tree" model="ir.ui.view">
+            <field name="name">asso.iscrizioni.tree</field>
+            <field name="model">asso.iscrizioni</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="pagamento_date"/>
+                    <field name="associato_id"/>
+                    <field name="importo"/>
+                    <field name="modalita_pagamento"/>
+                    <field name="state"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- FORM VIEW -->
+        <record id="view_asso_iscrizioni_form" model="ir.ui.view">
+            <field name="name">asso.iscrizioni.form</field>
+            <field name="model">asso.iscrizioni</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="associato_id"/>
+                                <field name="pagamento_date"/>
+                                <field name="importo"/>
+                                <field name="modalita_pagamento"/>
+                            </group>
+                            <group>
+                                <field name="state"/>
+                                <field name="description"/>
+                                <field name="name"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- ACTION -->
+        <record id="action_asso_iscrizioni" model="ir.actions.act_window">
+            <field name="name">Iscrizioni</field>
+            <field name="res_model">asso.iscrizioni</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- MENU -->
+        <menuitem id="menu_asso_iscrizioni"
+                  name="Iscrizioni"
+                  parent="menu_asso_general"
+                  sequence="10"
+                  action="action_asso_iscrizioni"
+        />
+    </data>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="we_example" name="Snippet Example">
+        <section class="we_example border-none company-visible">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h2 class="h1">Snippet Example</h2>
+                    <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for <br/>previewing layouts and visual mockups.</p>
+                </div>
+                <div class="o_not_editable">
+                    Non puoi editare questo testo
+                </div>
+                <div class="we_example">
+                    <p>
+                    akjg ajkldfh òakljg aldkfag òldkfgj aòldfkgj aòdfkljad òfjklgha dòfjklagh
+                        dfòkagh dfòahfòghadòfkjgh adòfkjgh adkòfjgh adòfkadh fògjkah dfògjklah
+                        dfògjklah dfògjkadh dklrh fwhed vòkljhd òvòlksjv ksdkv sdkv ksvj dlòvjk sdlòfkvj sdlòv
+                    </p>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

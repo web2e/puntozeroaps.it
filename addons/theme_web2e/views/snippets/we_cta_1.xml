@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="we_cta_1" name="CallToAction 1">
+    <section id="cta-book-tr" class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96" data-scroll-background-ratio="1">
+        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;"/>
+        <div class="o_we_bg_filter bg-black-50"/>
+        <div class="container s_allow_columns">
+          <div class="row">
+            <div class="col-7">
+              <h2>Sei interessato ai nostri progetti?</h2>
+            </div>
+            <div class="col-5 align-item-center"><a t-att-href="cta_btn_href" class="btn btn-primary rounded mb-2"><t t-esc="cta_btn_text">Contact us <i class="fa fa-arrow-circle-o-right"></i></t></a></div>
+          </div>
+        </div>
+    </section>
+</template>
+
+</odoo>

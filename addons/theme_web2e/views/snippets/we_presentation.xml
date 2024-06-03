@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="we_presentation" name="Presentation">
+        <section id="presentation">
+            <div class="container-fluid">
+                <div class="container-mid">
+                    <h2>I nostri ambiti di intervento</h2>
+                    <div class="flex-container reverse">
+                        <div class="flex-col text-box">
+                            <div class="text-box-holder">
+                                <h3>Progetti socio-ambientali</h3>
+                                <p>Azioni coordinate da una visione improntata all'equilibrio
+                                    ambientale, sociale ed economico: zero emissioni, zero povertà,
+                                    zero discriminazioni.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="flex-col img-box">
+                            <img
+                                src="theme_web2e/static/src/img/chi-siamo.jpg"
+                                class="d-block w-100 rounded-circle" alt="cover 1" />
+                        </div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="flex-col img-box">
+                            <img
+                                src="theme_web2e/static/src/img/chi-siamo.jpg"
+                                class="d-block w-100 rounded-circle" alt="cover 1" />
+                        </div>
+                        <div class="flex-col text-box">
+                            <div class="text-box-holder">
+                                <h3>Promozione di servizi di welfare di comunità e gestione di beni
+                                    comuni (commons)</h3>
+                                <p>Punto Zero promuove la nascita di nuovi commons, la difesa di
+                                    quelli esistenti (aria, acqua, terra ecc.), sperimentando
+                                    soluzioni gestionali innovative, mettendo al centro la comunità
+                                    locale; Punto Zero promuove anche servizi di conciliazione di
+                                    taglio socio-culturale;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-container reverse">
+                        <div class="flex-col text-box">
+                            <div class="text-box-holder">
+                                <h3>Attività di animazione</h3>
+                                <p>Insieme di attività mirate a costruire legami tra persone e
+                                    luoghi, facilitare la costruzione di reti con particolare
+                                    riferimento a soggetti a rischio di esclusione.</p>
+                            </div>
+                        </div>
+                        <div class="flex-col img-box">
+                            <img
+                                src="theme_web2e/static/src/img/chi-siamo.jpg"
+                                class="d-block w-100 rounded-circle" alt="cover 1" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

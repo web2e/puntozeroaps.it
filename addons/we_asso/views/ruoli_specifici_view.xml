@@ -1,0 +1,56 @@
+<odoo>
+    <data>
+        <!-- TREE VIEW -->
+        <record id="view_asso_ruoli_specifici_tree" model="ir.ui.view">
+            <field name="name">asso.ruoli_specifici.tree</field>
+            <field name="model">asso.ruoli_specifici</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="ruolo"/>
+                    <field name="ordinamento"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <!-- FORM -->
+        <record model="ir.ui.view" id="view_asso_ruoli_specifici_form">
+            <field name="name">asso.ruoli_specifici.form</field>
+            <field name="model">asso.ruoli_specifici</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"/>
+                                <field name="ruolo" required="True"/>
+                                <field name="ordinamento" />
+                            </group>
+                        </group>
+                        <notebook>
+                        <page name="description" string="Description">
+                            <field name="description" options="{'resizable': false}"
+                                   placeholder="Ruolo Spefico descrizione..."/>
+                        </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="action_asso_ruoli_specifici">
+            <field name="name">Ruoli Specifici</field>
+            <field name="res_model">asso.ruoli_specifici</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_asso_ruoli_specifici"
+                  name="Ruoli specifici"
+                  parent="menu_asso_configuration"
+                  sequence="10"
+                  action="action_asso_ruoli_specifici"
+        />
+    </data>
+</odoo>

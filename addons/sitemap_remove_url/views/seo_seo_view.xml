@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_seo_seo_list" model="ir.ui.view">
+        <field name="name">seo.seo.list</field>
+        <field name="model">seo.seo</field>
+        <field name="arch" type="xml">
+            <tree string="Seo">
+                <field name="name"/>
+                <field name="url_containing"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_seo_seo_form" model="ir.ui.view">
+        <field name="name">seo.seo.form</field>
+        <field name="model">seo.seo</field>
+        <field name="arch" type="xml">
+            <form string="Seo">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="url_containing"/>
+                        <field name="is_indexed"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_seo_seo" model="ir.actions.act_window">
+        <field name="name">Seo Optimize</field>
+        <field name="res_model">seo.seo</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+            id="menu_sitemap_remover_settings"
+            parent="website.menu_website_configuration"
+            name="Sitemap URL Remove"
+            sequence="30"
+            groups="website.group_website_designer"/>
+
+
+    <menuitem
+            id="menu_sitemap_remover"
+            parent="sitemap_remove_url.menu_sitemap_remover_settings"
+            name="Sitemap Remover" action="action_seo_seo"
+    />
+
+
+
+
+
+</odoo>

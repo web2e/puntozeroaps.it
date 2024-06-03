@@ -1,0 +1,55 @@
+version: '2'
+services:
+  db_puntozeroapsit:
+    image: postgres:15
+    user: root
+    environment:
+      - POSTGRES_USER=odoo
+      - POSTGRES_PASSWORD=odoo16@2023    
+      - POSTGRES_DB=postgres
+    restart: always             # run as a service
+    volumes:
+        - ./postgresql:/var/lib/postgresql/data
+    networks:
+      - stack
+
+  odoo_puntozeroapsit:
+    image: odoo:16
+    user: root
+    depends_on:
+      - db_puntozeroapsit
+    tty: true
+    command: --
+    environment:
+      - HOST=db_puntozeroapsit
+      - USER=odoo
+      - PASSWORD=odoo16@2023
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.entrypoints=web-secure"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.rule=Host(`puntozeroaps.it`) || Host(`www.puntozeroaps.it`)"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.tls=true"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.tls.certresolver=le"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.service=odoo_puntozeroapsit"
+      - "traefik.http.services.odoo_puntozeroapsit.loadbalancer.server.port=8069"
+      - "traefik.docker.network=traefik-proxy"
+      - "traefik.http.middlewares.puntozero-redirect.redirectregex.regex=^https?://puntozeroaps.it/(.*)"
+      - "traefik.http.middlewares.puntozero-redirect.redirectregex.replacement=https://www.puntozeroaps.it/$${1}"
+      - "traefik.http.middlewares.puntozero-redirect.redirectregex.permanent=true"
+      - "traefik.http.routers.odoo_puntozeroapsit-secure.middlewares=puntozero-redirect"
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+      - ./entrypoint.sh:/entrypoint.sh   # if you want to install additional Python packages, uncomment this line!
+      - ./addons:/mnt/extra-addons
+      - ./etc:/etc/odoo
+    networks:
+      - stack
+      - traefik-proxy
+    restart: always             # run as a service
+    
+networks:
+  stack:
+    external: false
+  traefik-proxy:
+    external: true

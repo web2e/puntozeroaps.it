@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="we_features" name="Features">
+    <section id="features">
+      <div class="container-fluid">
+        <div class="container-mid">
+          <div class="flex-container green-box-rd">
+            <div class="flex-col text-box">
+              <div class="text-box-holder">
+                <div class="small-text-wh">#giocoteca</div>
+                <h2>Ludicando</h2>
+                <p class="intro-font">Giocare è un cosa seria, e per farla bene ci vogliono gli
+                  strumenti! Grazie a un contributo del Piano di giovani di Zona Laghi nel 2023
+                  l’APS Ortazzo e Punto Zero hanno potuto costruire una ludoteca ambientale ed
+                  educativa per la comunità.</p>
+                <div class="btn-holder">
+                  <a href="/associazione" class="btn btn-primary rounded mb-2">Scopri di più <i
+                      class="fa fa-arrow-circle-o-right"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="flex-col img-box">
+              <img
+                src="/theme_web2e/static/src/img/chi-siamo.jpg"
+                class="d-block w-100 rounded-circle" alt="cover 1" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

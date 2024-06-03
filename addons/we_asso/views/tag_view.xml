@@ -1,0 +1,39 @@
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_form_asso_tag">
+            <field name="name">asso.tag.form</field>
+            <field name="model">asso.tag</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="True"/>
+                            </group>
+                        </group>
+                        <notebook>
+                        <page name="description" string="Description">
+                            <field name="description" options="{'resizable': false}"
+                                   placeholder="Tag descrizione..."/>
+                        </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <!-- actions opening views on models -->
+        <record model="ir.actions.act_window" id="action_asso_tag">
+            <field name="name">Tag</field>
+            <field name="res_model">asso.tag</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem id="menu_asso_tag"
+                  name="Tag"
+                  parent="menu_asso_configuration"
+                  sequence="10"
+                  action="action_asso_tag"
+        />
+    </data>
+</odoo>

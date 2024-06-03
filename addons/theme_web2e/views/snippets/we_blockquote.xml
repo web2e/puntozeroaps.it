@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template name="We Blockquote" id="we_blockquote">
+    <blockquote class="we_blockquote o_animable blockquote">
+        <img
+        src="/theme_web2e/static/src/img/quote.png"
+        class="we_blockquote_icon" alt="quote" />
+        <div class="we_blockquote_content">
+            <p>Write a quote here from one of your customers. Quotes are a great way to build confidence in your products or services.</p>
+        </div>
+    </blockquote>
+</template>
+
+</odoo>

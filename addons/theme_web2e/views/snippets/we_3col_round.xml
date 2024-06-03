@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="we_3col_round" name="3Col-Round">
+    <section id="we-3col" data-vcss="001">
+      <div class="container-mid">
+        <div class="text-center">
+          <h2>Cosa facciamo</h2>
+          <p class="intro-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div class="flex-container">
+          <div class="flex-col-3">
+            <div class="we-3col-box d-flex flex-column">
+              <div class="we-3col-img"><img src="/theme_web2e/static/src/img/progetti.jpg" alt="cover 1" /></div>
+              <h3>Elaboriamo idee e progetti</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <a class="bolder-green" href="#">Scopri di più <i class="fa fa-arrow-circle-o-right">​</i></a>
+            </div>
+          </div>
+          <div class="flex-col-3">
+            <div class="we-3col-box d-flex flex-column">
+              <div class="we-3col-img"><img src="/theme_web2e/static/src/img/persone.jpg" alt="cover 1" /></div>
+              <h3>Connettiamo le persone ai luoghi</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <a class="bolder-green" href="#">Scopri di più <i class="fa fa-arrow-circle-o-right">​</i></a>
+            </div>
+          </div>
+          <div class="flex-col-3">
+            <div class="we-3col-box d-flex flex-column">
+              <div class="we-3col-img"><img src="/theme_web2e/static/src/img/ambiente.jpg" alt="cover 1" /></div>
+              <h3>Salvaguardiamo l’ambiente</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+              <a class="bolder-green" href="#">Scopri di più <i class="fa fa-arrow-circle-o-right">​</i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>

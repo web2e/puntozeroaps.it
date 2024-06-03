@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <template id="we_about" name="About">
+        <section id="about">
+          <div class="container-fluid bg-gray py-6">
+              <div class="container-md">
+                <div class="row gx-5">
+                  <div class="col-5">
+                    <img src="https://dev.fisio-osteo.it/web/image/702-1d910445/istockphoto-507121470-1024x1024.jpeg" class="d-block w-100 br-rd" alt="cover 1" />
+                  </div>
+                  <div class="col-7 d-flex justify-content-center align-items-center">
+                    <div class="d-flex justify-content-start flex-column ps-4">
+                      <h2 class="display-5">Gianpiero Capra</h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      <p class="mt-4"><a href="#" class="btn btn-secondary rounded-pill d-inline me-2 px-4 py-3">Scopri di più <i class="fa fa-arrow-right"></i></a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </section>
+    </template>
+</odoo>

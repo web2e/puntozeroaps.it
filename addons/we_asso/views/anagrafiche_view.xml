@@ -1,0 +1,228 @@
+<odoo>
+    <data>
+        <!--TREE VIEW -->
+        <record id="view_asso_anagrafiche_tree" model="ir.ui.view">
+            <field name="name">Asso Anagrafiche List View</field>
+            <field name="model">asso.anagrafiche</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="tipo"/>
+                    <field name="is_associato"/>
+                    <field name="email"/>
+                    <field name="mobile"/>
+                    <field name="codice_tessera" optional="hide"/>
+                    <field name="tipo_associato" optional="hide"/>
+                    <field name="tipo_ente" optional="hide"/>
+                    <field name="is_volontario" optional="hide"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <!-- FORM VIEW -->
+        <record id="view_asso_anagrafiche_form" model="ir.ui.view">
+            <field name="name">asso.anagrafiche.form</field>
+            <field name="model">asso.anagrafiche</field>
+            <field name="arch" type="xml">
+                <form string="Anagrafiche">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_asso_iscrizioni" type="object" class="oe_stat_button"
+                                    icon="fa-id-card-o">
+                                <div class="o_stat_info">
+                                    <span class="o_stat_value">
+                                        <field name="iscrizioni_count"/>
+                                    </span>
+                                    <span class="o_stat_text">Iscrizioni</span>
+                                </div>
+                            </button>
+                        </div>
+
+                        <field name="image_1920" widget="image" class="oe_avatar"
+                               options="{&quot;preview_image&quot;: &quot;avatar_128&quot;}"/>
+                        <div class="oe_title mb24">
+                            <field name="tipo" widget="radio" options="{'horizontal': true}"/>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="is_associato"/>
+                                <field name="is_volontario" attrs="{
+                                    'required': [('tipo', '=', 'persona')],
+                                    'invisible': [('tipo', '!=', 'persona')]
+                                    }"/>
+
+                                <field name="tipo_ente" attrs="{
+                                    'required': [('tipo', '=', 'ente')],
+                                    'invisible': [('tipo', '!=', 'ente')]
+                                    }"/>
+                            </group>
+                            <group>
+
+                                <field name="tipo_associato" attrs="{
+                                    'required': [('is_associato', '=', True)],
+                                    'invisible': [('is_associato', '!=', True)]
+                                    }"/>
+                                <field name="codice_tessera" attrs="{
+                                    'invisible': [('is_associato', '!=', True)]
+                                    }"/>
+                            </group>
+                        </group>
+                        <hr/>
+                        <group>
+                            <group>
+                                <field name="firstname"
+                                       attrs="{
+                                    'required': [('tipo', '=', 'persona')],
+                                    'invisible': [('tipo', '!=', 'persona')]
+                                    }"
+                                />
+                                <field name="lastname"
+                                       attrs="{
+                                    'required': [('tipo', '=', 'persona')],
+                                    'invisible': [('tipo', '!=', 'persona')]
+                                    }"
+                                />
+                                <field name="name" string="Denominazione"
+                                       attrs="{
+                                    'required': [('tipo', '=', 'ente')],
+                                    'invisible': [('tipo', '!=', 'ente')]
+                                    }"
+                                />
+                                <field name="codice_fiscale"/>
+
+                                <field name="vat"/>
+                            </group>
+                            <group>
+                                <field name="email"/>
+                                <field name="mobile"/>
+                                <field name="phone"/>
+                            </group>
+                        </group>
+
+
+                        <notebook>
+                            <page string="Ruoli" name="asso_ruoli_line">
+                                <field name="ruoli_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="ruolo_id"/>
+                                        <field name="data_invio_richiesta"/>
+                                        <field name="data_approvazione"/>
+                                        <field name="data_cessazione"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Dati specifici">
+                                <group>
+                                    <field name="gender" string="Sesso"/>
+                                    <field name="luogo_nascita" string="Luogo di nascita"/>
+                                    <field name="data_nascita" string="Data di nascita"/>
+                                </group>
+                            </page>
+                            <page string="Indirizzi" name="asso_indirizzi">
+                                <group>
+                                    <field name="indirizzo"/>
+                                    <field name="city"/>
+                                    <field name="provincia"/>
+                                    <field name="cap"/>
+                                    <field name="nazione"/>
+                                </group>
+                            </page>
+                            <page string="Tag" name="asso_tag_line">
+                                <field name="tag_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="tag_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Gruppi" name="asso_gruppi_line">
+                                <field name="gruppi_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="gruppi_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Documenti">
+                                <field name="documenti_line_ids">
+                                    <tree editable="bottom">
+                                        <field name="name"/>
+                                        <field name="tipo_documento_id"/>
+                                        <field name="attachment_ids" widget="many2many_binary" class="oe_inline"/>
+                                        <field name="data_scadenza"/>
+                                        <field name="is_private"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Note">
+                                <group>
+                                    <field name="note"/>
+                                    <field name="note_operative"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+
+                    <div class="oe_chatter">
+                        <field name="message_follower_ids"/>
+                        <field name="activity_ids"/>
+                        <field name="message_ids"/>
+                    </div>
+                </form>
+            </field>
+        </record>
+
+
+        <!-- KANBAN VIEW -->
+        <record id="view_asso_anagrafiche_kanban" model="ir.ui.view">
+            <field name="name">asso.anagrafiche.kanban</field>
+            <field name="model">asso.anagrafiche</field>
+            <field name="arch" type="xml">
+                <kanban class="o_res_partner_kanban">
+                    <field name="id"/>
+                    <field name="display_name"/>
+                    <field name="email"/>
+                    <field name="mobile"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div t-attf-class="oe_kanban_global_click">
+                                <div class="o_kanban_image">
+                                    <img alt="Avatar"
+                                         t-att-src="kanban_image('asso.anagrafiche', 'image_1920',record.id.raw_value)"/>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong class="o_kanban_record_title">
+                                        <field name="display_name"/>
+                                    </strong>
+                                    <div t-if="record.mobile.value">
+                                        <t t-esc="record.mobile.value"/>
+                                    </div>
+                                    <div t-if="record.email.value">
+                                        <t t-esc="record.email.value"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record>
+
+
+        <!-- ACTION -->
+        <record id="action_asso_anagrafiche" model="ir.actions.act_window">
+            <field name="name">Anagrafiche</field>
+            <field name="res_model">asso.anagrafiche</field>
+            <field name="view_mode">tree,form,kanban</field>
+        </record>
+
+
+        <!-- MENU -->
+        <menuitem id="menu_asso_anagrafiche"
+                  name="Anagrafiche"
+                  parent="menu_asso_general"
+                  sequence="5"
+                  action="action_asso_anagrafiche"
+        />
+
+    </data>
+</odoo>

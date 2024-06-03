@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="theme_web2e.we_mega_menu_card_little_icon" model="ir.ui.view">
+        <field name="name">Card Little Icons menu</field>
+        <field name="type">qweb</field>
+        <field name="key">theme_web2e.we_mega_menu_card_little_icon</field>
+        <field name="groups_id" eval="[(4,ref('base.group_user'))]" />
+        <field name="arch" type="xml">
+            <t t-name="theme_web2e.we_mega_menu_card_little_icon" groups="base.group_user"
+                name="Card Little Icons">
+                <section class="we_mega_menu_card_little_icon overflow-hidden">
+                    <div class="container">
+                        <div class="row align-items-start">
+                            <div class="col-lg-4 d-flex">
+                                <div class="mega-avatar-img">
+                                    <img
+                                        src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/avatar.png"
+                                        alt="Gianpiero Capre" />
+                                </div>
+                                <div class="mega-avatar-bx">
+                                    <h4>Gianpiero Capra</h4>
+                                    <p>Aliquam tincidunt ipsum at mauris dignissim pellentesque et
+                                        at lectus</p>
+                                    <a href="#" class="d-inline me-2">Scopri di più <i
+                                            class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-4 col-sm py-2 d-flex align-items-center">
+                                <nav class="nav flex-column">
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png"
+                                            class="me-2"
+                                            alt="Formazione
+                                        di
+                                        Base" />Formazione
+                                        di Base </a>
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/esa-ico.png"
+                                            class="me-2"
+                                            alt="Attività clinica" />Attività clinica</a>
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/triangle-ico.png"
+                                            class="me-2"
+                                            alt="Docenze presso università" />Docenze presso
+                                        Università</a>
+                                </nav>
+                            </div>
+                            <div class="col-4 col-sm py-2 d-flex align-items-center">
+                                <nav class="nav flex-column">
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/rombo-ico.png"
+                                            class="me-2"
+                                            alt="Docenze extra universitarie" />Docenze extra
+                                        universitarie </a>
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/sfere-ico.png"
+                                            class="me-2"
+                                            alt="Corsi di aggiornamento e specializzazione" />Corsi
+                                        di aggiornamento e specializzazione </a>
+                                    <a href="#" class="nav-link px-2 text-wrap"><img
+                                            src="/theme_web2e/static/src/img/snippets/we_mega_menu_card_little_icon/esa-ico.png"
+                                            class="me-2"
+                                            alt="Congressi" />Congressi </a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </t>
+        </field>
+    </record>
+
+    <record id="theme_web2e.we_mega_menu_card_little_icon_000_scss" model="ir.asset">
+        <field name="name">Menu - Card little icon 000 SCSS</field>
+        <field name="bundle">web.assets_frontend</field>
+        <field name="path">/theme_web2e/static/src/snippets/we_mega_menu_card_little_icon/000.scss</field>
+    </record>
+
+</odoo>

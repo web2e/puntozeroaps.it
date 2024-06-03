@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+  <template id="we_card_header" name="We Card Header">
+    <div class="we-card d-flex flex-column shadow mb-5 pb-5 rounded-we bg-gray">
+      <div class="we-card-header">
+        <h3>Formazione di base</h3>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+  </template>
+
+</odoo>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="we_cta_2" name="CallToAction 2">
+        <section id="cta-support" class="s_cover parallax s_parallax_is_fixed bg-black-50 pt96 pb96"
+            data-scroll-background-ratio="1">
+            <span class="s_parallax_bg oe_img_bg"
+                style="background-image: url('/web/image/website.s_cover_default_image'); background-position: 50% 0;" />
+            <div class="o_we_bg_filter bg-black-50" />
+            <div class="container-mid s_allow_columns">
+                <h2 class="">Ti piacciono i nostri progetti e percorsi?</h2>
+                <p class="cta-intro">Per partecipare attivamente o sostenere Puntozero APS puoi
+                    tesserarti o fare una donazione!</p>
+                <div class="btn-container">
+                    <a t-att-href="cta_btn_href" class="btn btn-primary rounded mb-2">
+                        <t t-esc="cta_btn_text">Associati<i class="fa fa-arrow-circle-o-right"></i></t>
+                    </a>
+                    <a t-att-href="cta_btn_href" class="btn btn-cta rounded mb-2">
+                        <t t-esc="cta_btn_text">Sostienici<i class="fa fa-heart-o"></i></t>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </template>
+</odoo>

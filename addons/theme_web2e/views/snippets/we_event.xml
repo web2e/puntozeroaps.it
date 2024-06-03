@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+  <template id="we_event" name="Event">
+    <section id="event-scroll">
+      <div class="container-fluid">
+        <div class="container-mid">
+          <div class="small-text-gr">Eventi</div>
+          <h2>Prossimi appuntamenti</h2>
+          <p class="intro-font">L’animazione territoriale è una degli obiettivi di Punto Zero.
+            Attraverso alcune iniziative rivolte a pubblici diversi abbiamo partecipato a rendere
+            attivi e vivi i luoghi in cui viviamo.</p>
+          <a class="bolder-green" href="#">Vedi tutti gli eventi <i class="fa fa-arrow-circle-o-right">​</i></a>
+          <div class="event-holder">
+            <div class="event-img-s">
+              <img src="/theme_web2e/static/src/img/FLCGT_Logo.jpg" class="rounded-circle"
+                alt="cover 1" />
+            </div>
+            <div class="event-details">
+              <div class="event-details-holder">
+                <div class="event-dt">
+                  <div class="event-ico">
+                    <img src="/theme_web2e/static/src/img/date.png"
+                      alt="calendario" />
+                  </div>
+                  <div class="event-data">20/21/22 ottobre 2024</div>
+                  <div class="event-data">|</div>
+                  <div class="event-ico">
+                    <img src="/theme_web2e/static/src/img/location.png"
+                      alt="Luogo" />
+                  </div>
+                  <div class="event-data">Trento</div>
+                </div>
+                <h3>Fa la cosa giusta - Trento </h3>
+                <a class="bolder-green" href="#">Scopri di più <i class="fa fa-arrow-circle-o-right">​</i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </template>
+</odoo>
